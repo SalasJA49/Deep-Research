@@ -222,7 +222,8 @@ class InsightGenerator:
             "patterns": patterns
         }
         
-        prompt = f"""You are a data analyst. Analyze the following data and provide insights.
+        prompt = f""" User query: {query} 
+        You are a data analyst. Analyze the following data and provide insights.
 
 Data Summary:
 - Shape: {data_summary['shape'][0]} rows, {data_summary['shape'][1]} columns

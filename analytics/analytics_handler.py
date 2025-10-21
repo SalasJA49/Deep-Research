@@ -101,7 +101,8 @@ class AnalyticsHandler:
                 "categorical_columns": df.select_dtypes(include=['object', 'category']).columns.tolist()
             }
             
-            prompt = f"""You are a data visualization expert. Based on the data and user request, recommend appropriate charts.
+            prompt = f"""User query: {query} 
+            You are a data visualization expert. Based on the data and user request, recommend appropriate charts.
 
 Data Summary:
 - Shape: {data_summary['shape'][0]} rows, {data_summary['shape'][1]} columns
