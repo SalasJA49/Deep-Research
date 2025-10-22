@@ -222,7 +222,7 @@ class InsightGenerator:
             "patterns": patterns
         }
         
-        prompt = f""" User query: {query} 
+        prompt = f"""
         You are a data analyst. Analyze the following data and provide insights.
 
 Data Summary:
